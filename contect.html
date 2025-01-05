@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Contact Page
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .map,
+        .contact-info,
+        .contact-form {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .map {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        .contact-info {
+            flex: 1 1 45%;
+            max-width: 45%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-info div {
+            text-align: center;
+        }
+
+        .contact-info i {
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        .contact-form {
+            flex: 1 1 45%;
+            max-width: 45%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+
+            .contact-info,
+            .contact-form {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="map">
+            <iframe style="border: 0; width: 100%; height: 250px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1742.9956510827303!2d77.10400336219817!3d28.620039442803186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03483a256aad%3A0x152b308726551333!2sSun%20foundation%20World%20class%20skill%20center!5e0!3m2!1sen!2sin!4v1674663098264!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope">
+                </i>
+                <p>
+                    Email Us
+                </p>
+                <p>
+                    friendlyparenting.sv@gmail.com
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-phone">
+                </i>
+                <p>
+                    Call Us
+                </p>
+                <p>
+                    +91 8527769064
+                </p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <input placeholder="Your Name" type="text" />
+            <input placeholder="Your Email" type="email" />
+            <input placeholder="Your Phone No." type="text" />
+            <input placeholder="Your Address" type="text" />
+            <input placeholder="Subject" type="text" />
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button>
+                Send Message
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

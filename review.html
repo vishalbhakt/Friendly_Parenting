@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Review Slider</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.slider {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.review {
+    display: none;
+}
+
+.review.active {
+    display: block;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+     </style>
+     <script>
+        let currentReviewIndex = 0;
+const reviews = document.querySelectorAll('.review');
+
+function showReview(index) {
+    reviews.forEach((review, i) => {
+        review.classList.toggle('active', i === index);
+    });
+}
+
+function changeReview(direction) {
+    currentReviewIndex += direction;
+    if (currentReviewIndex < 0) {
+        currentReviewIndex = reviews.length - 1;
+    } else if (currentReviewIndex >= reviews.length) {
+        currentReviewIndex = 0;
+    }
+    showReview(currentReviewIndex);
+}
+
+// Initialize the first review
+showReview(currentReviewIndex);
+     </script>
+</head>
+<body>
+    <div class="slider">
+        <div class="review active">
+            <h3>Sarah T.</h3>
+            <p>"I absolutely love the user interface of SnapEdit! It’s incredibly intuitive and user-friendly. The layout is clean, and I can easily find all the tools I need without feeling overwhelmed."</p>
+        </div>
+        <div class="review">
+            <h3>Mark L.</h3>
+            <p>"The navigation in SnapEdit is mostly smooth, but I did encounter a slight hiccup when trying to access the advanced features. A more prominent placement for these features would enhance the experience."</p>
+        </div>
+        <div class="review">
+            <h3>Emily R.</h3>
+            <p>"I’m a huge fan of customization, and SnapEdit does not disappoint! The UI allows me to rearrange my toolbars and choose which features I want to see upfront."</p>
+        </div>
+        <div class="review">
+            <h3>Jason K.</h3>
+            <p>"SnapEdit’s UI is generally responsive, but I noticed some lag when applying filters to high-resolution images. Optimizing performance for larger files would significantly improve the user experience."</p>
+        </div>
+        <div class="review">
+            <h3>Linda M.</h3>
+            <p>"As someone who relies on accessibility features, I’m thrilled with how SnapEdit has integrated these into their UI. It’s clear that the developers have put thought into making this app usable for everyone."</p>
+        </div>
+        <button class="prev" onclick="changeReview(-1)">&#10094; Previous</button>
+        <button class="next" onclick="changeReview(1)">Next &#10095;</button>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
