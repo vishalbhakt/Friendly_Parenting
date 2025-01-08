@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendly Parenting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .nav-links .login {
+    color: #555;
+  }
+
+  .nav-links .signup {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+  }
+
+  .hero-text {
+    max-width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    color: #333;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+  }
+
+  .hero-text button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .hero-text button:hover {
+    background-color: #0056b3;
+  }
+
+  .hero-image img {
+    width: 300px;
+    height: auto;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Friendly Parenting</div>
+      <ul class="nav-links">
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#">Programs and Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Parenting Courses</a></li>
+            <li><a href="#">Life Skills Program</a></li>
+            <li><a href="#">Interview Readiness Program</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Workshops and Seminars</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="login">Log In</a></li>
+        <li><a href="#" class="signup">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Empower Your Parenting Journey</h1>
+        <p>
+          Join Satvinder Kaur, a dedicated Parenting Master Coach, as she helps you navigate the complexities of
+          parenting with confidence and compassion. Discover tailored strategies to foster a nurturing environment for
+          your children.
+        </p>
+        <button>Get Started</button>
+      </div>
+      <div class="hero-image">
+        <img src="./static/images/Friendly_logo.png" alt="Parent and child illustration">
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

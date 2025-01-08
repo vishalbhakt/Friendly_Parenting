@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .navbar {
+        background-color: #333;
+        padding: 10px 20px;
+    }
+
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu>li {
+        position: relative;
+    }
+
+    .menu>li>a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .menu>li:hover>a {
+        background-color: #900;
+        /* Highlight for main menu */
+    }
+
+    .dropdown-menu,
+    .dropdown-submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-menu li,
+    .dropdown-submenu li {
+        position: relative;
+    }
+
+    .dropdown-menu li a,
+    .dropdown-submenu li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .dropdown-menu li:hover>a,
+    .dropdown-submenu li:hover>a {
+        background-color: #555;
+    }
+
+    .dropdown-menu li:hover .dropdown-submenu {
+        display: block;
+        top: 0;
+        left: 100%;
+        /* Position the submenu to the right of the parent */
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Courses</a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown">
+                        <a href="#">Parenting</a>
+                        <ul class="dropdown-submenu">
+                            <li><a href="#">General</a></li>
+                            <li><a href="#">Life Skills</a></li>
+                            <li><a href="#">Postmatric OtherThan Inter Student Login</a></li>
+                            <li><a href="#">Postmatric Other State Student Login</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Renewal Login</a></li>
+                    <li><a href="#">Correction for GENERAL</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Institute</a></li>
+            <li><a href="#">Department</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Status</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

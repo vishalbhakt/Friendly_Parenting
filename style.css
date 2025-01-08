@@ -128,4 +128,29 @@ footer {
     color: white;
 }
 
-</style>
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  display: block;
+}
