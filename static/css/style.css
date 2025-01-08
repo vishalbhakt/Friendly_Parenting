@@ -86,94 +86,6 @@ img {
   margin: 20px;
 }
 
-/* From Uiverse.io by DavidTM96 */
-.form {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  font-family: inherit;
-  gap: 10px;
-  padding-inline: 2em;
-  padding-bottom: 0.4em;
-  background-color: #171717;
-  background-color: #0a192f;
-  border-radius: 20px;
-}
-
-.form-heading {
-  text-align: center;
-  margin: 2em;
-  color: #9bccfa;
-  font-size: 1.2em;
-  background-color: transparent;
-  align-self: center;
-}
-
-.form-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  border-radius: 10px;
-  padding: 0.6em;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #171717;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-
-.input-field {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: #25262b;
-  padding-inline: 1em;
-}
-
-.sendMessage-btn {
-  cursor: pointer;
-  margin-bottom: 3em;
-  padding: 1em;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #397bb9;
-  font-weight: bold;
-  outline: 1px solid #9bfaab;
-  transition: all ease-in-out 0.3s;
-}
-
-.sendMessage-btn:hover {
-  transition: all ease-in-out 0.3s;
-  background-color: #9bccfa;
-  color: #000;
-  cursor: pointer;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-
-.form-card1 {
-  background-image: linear-gradient(163deg, #9bccfa 0%, #9bccfa 100%);
-  border-radius: 22px;
-  transition: all 0.3s;
-}
-
-.form-card1:hover {
-  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
-}
-
-.form-card2 {
-  border-radius: 0;
-  transition: all 0.2s;
-}
-
-.form-card2:hover {
-  transform: scale(0.98);
-  border-radius: 20px;
-}
-
 a:hover {
   color: #6c7afa;
   text-decoration: none;
@@ -260,3 +172,59 @@ a:hover {
   z-index: 2;
   cursor: pointer;
 } */
+
+/* dropdown-menu */
+
+.dropdown-menu,
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu li,
+.dropdown-submenu li {
+  position: relative;
+}
+
+.dropdown-menu li a,
+.dropdown-submenu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-menu li:hover>a,
+.dropdown-submenu li:hover>a {
+  background-color: #555;
+}
+
+.dropdown-menu li:hover .dropdown-submenu {
+  display: block;
+  top: 0;
+  left: 100%;
+  /* Position the submenu to the right of the parent */
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.headerbg {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./static/images/sliper1.jpg');
+  background-size: cover;
+  position: relative;
+}
+
