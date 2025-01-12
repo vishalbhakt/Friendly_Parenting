@@ -2,89 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friendly Parenting</title>
-    <link rel="icon" href="./static/images/Friendly_logo.png">
-    <link href="assets/img/logo/favicon.ico" rel="icon" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Friendly_Parenting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .contact-form {
+            flex: 1 1 45%;
+            /* max-width: 45%; */
+        }
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+
+            .contact-info,
+            .contact-form {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-info">
+            <div class="container-fluid  ">
+                <!-- Logo -->
+                <div class="d-flex align-items-center">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./static/images/Friendly_logo.png" alt="Friendly Parenting logo" class="img-fluid"
+                            style="width: 40px;">
+                        <span>Friendly Parenting</span>
+                    </a>
+                </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-info">
-        <div class="container-fluid  ">
-            <!-- Logo -->
-            <div class="d-flex align-items-center">
-                <a href="index.html" class="navbar-brand">
-                    <img src="./static/images/Friendly_logo.png" alt="Friendly Parenting logo" class="img-fluid"
-                        style="width: 40px;">
-                    <span>Friendly Parenting</span>
-                </a>
+                <!-- Navigation Links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Our Page.html#our-coach">Our Coach</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-white" href="service.html#courses">Courses</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="#">Courses</a>
+                            <ul class="dropdown-menu">
+
+                                <li class="dropdown">
+                                    <a href="./4p.html">Parenting</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="./5g.html">General</a></li>
+                                        <li><a href="./tt.html">Toddles</a></li>
+                                        <li><a href="./Mid Schools.html">Mid Schools</a></li>
+                                        <li><a href="./Teenages.html">Teenages</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./6t.html">Life Skills</a></li>
+                                <li><a href="./7i.html">Interview Readiness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Seminar.html">Seminar</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#contact">Contact</a> -->
+                        </li>
+                    </ul>
+                    <a class="btn btn-light ms-3" href="#contact">Let’s Connect</a>
+                </div>
             </div>
-
-            <!-- Navigation Links -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="Our Page.html#our-coach">Our Coach</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-white" href="service.html#courses">Courses</a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white" href="#">Courses</a>
-                        <ul class="dropdown-menu">
-
-                            <li class="dropdown">
-                                <a href="./4p.html">Parenting</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="./5g.html">General</a></li>
-                                    <li><a href="#">Toddles</a></li>
-                                    <li><a href="#">Mid Schools</a></li>
-                                    <li><a href="#">Teenages</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./6t.html">Life Skills</a></li>
-                            <li><a href="./7i.html">Interview Readiness</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="Seminar.html">Seminar</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="#contact">Contact</a> -->
-                    </li>
-                </ul>
-                <a class="btn btn-light ms-3" href="#contact">Let’s Connect</a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!-- Carousel Slider -->
-    <div id="parentingSlider" class="carousel slide" data-bs-ride="carousel">
+    <div id="parentingSlider" class="carousel slide " data-bs-ride="carousel" style="margin-top: 4%;">
         <div class="carousel-inner ">
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img src="./static/images/sliper1.jpg" class="d-block w-100 imgsc" alt="Friendly Parenting">
+                <img src="./static/images/sliper1.jpg" class="d-block w-100 imgsc" alt="Friendly Parenting"
+                    style="height: 500px; width:1000px;">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <h2 class="text-white p-3 rounded">Friendly Parenting</h2>
                     <p class="text-white p-3 rounded">
@@ -95,7 +128,8 @@
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <img src="./static/images/sliper.jpg" class="d-block w-100 imgsc" alt="Professional Team">
+                <img src="./static/images/sliper.jpg" class="d-block w-100 imgsc" alt="Professional Team"
+                    style="height: 500px; width:1000px;">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <h2 class="text-white p-3 rounded">Professional Guidance</h2>
                     <p class="text-white p-3 rounded">Helping parents navigate the complexities of modern
@@ -114,87 +148,133 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container-fluid " >
-        <div class="row headerbg ">
-            <div class="col-sm ">
-                <!-- <div class="container mt-5"> -->
-                <h3 class="text-center mb-4">Why Choose Me</h3>
+
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <div class="container mt-2">
+
+
+            <!-- text content -->
+            <div class="row mt-2">
+                <h1 class="text-center mb-4">Why Choose Me
+                    <i class="fa-solid fa-chalkboard-user text-danger text-end" style="font-size: 50px;"></i>
+                </h1>
+
                 <p>As your Master Coach & Trainer, I believe in a supportive and solution-oriented approach
                     tailoring my guidance to address the unique challenges and needs of each family. Here are some
-                    key aspects of my methodology:</p>
-                <ol>
-                    <li>Interactive Workshops: Engaging participants through dynamic, hands-on workshops that cover
-                        various aspects, encourage active participation and real-time problem-solving.</li>
-                    <li>Evidence-Based Strategies: Utilizing proven techniques backed by research to provide
-                        practical, actionable advice. This ensures that participants are equipped with reliable
-                        tools to handle everyday challenges effectively.</li>
-                    <li>Role-Playing and Simulations: Conducting role-playing exercises to help you practice and
-                        refine your responses to different scenarios. This builds confidence and prepares you for
-                        real-life situations.</li>
-                    <li>Collaborative Learning: Fostering a community of learners where you can share experiences,
-                        support each other, and gain new perspectives. Peer learning is a powerful tool that
-                        enhances understanding and empathy.</li>
-                    <li>Continuous Support and Feedback: Maintaining an open line of communication with participants
-                        for ongoing support and feedback. Regular check-ins ensure that you feel supported and can
-                        track your progress.</li>
-                    <li>Inclusive support for everyone: My coaching programs are designed for everyone, whether
-                        you’re a working professional, student, or homemaker, a parent, or a child, you got my
-                        support.</li>
-                    <li>I offer a preventive approach, helping you avoid problems before they arise.</li>
-                    <li>Even with the best intentions, things can get out of hand sometimes. I'll partner with you
-                        to develop a personalized intervention plan that fits your unique needs that includes
-                        exploring the root cause of the current difficulties you're facing, providing strategies to
-                        address the specific challenges.</li>
-                    <li>We'll work together to implement the plan, monitor progress, and adjust strategies as
-                        needed.</li>
-                    <li>My programs are designed to be accessible and flexible, (both online & offline, for both
-                        group & individual) fitting into your busy life.</li>
-                </ol>
-                <!-- </div> -->
-            </div>
-            <div class="col-sm">
-                <!-- <h1>This is images side</h1> -->
-                <div class="row">
-                    <div class="col-sm"> <img src="./static/images/certificate 8.jpg" alt="certificate not found">
-                    </div>
-                    <div class="col-sm"> <img src="./static/images/certificate 1.jpg" alt="certificate not found">
-                    </div>
+                    key aspects of my methodology:
+                    <a class="btn bg-info text-center" data-bs-toggle="collapse" href="#collapseOne">Read More</a>
+                </p>
+
+                <div id="collapseOne" class="collapse ">
+                    <ol>
+                        <li>Interactive Workshops: Engaging participants through dynamic, hands-on workshops that cover
+                            various aspects, encourage active participation and real-time problem-solving.</li>
+                        <li>Evidence-Based Strategies: Utilizing proven techniques backed by research to provide
+                            practical, actionable advice. This ensures that participants are equipped with reliable
+                            tools to handle everyday challenges effectively.</li>
+                        <li>Role-Playing and Simulations: Conducting role-playing exercises to help you practice and
+                            refine your responses to different scenarios. This builds confidence and prepares you for
+                            real-life situations.</li>
+                        <li>Collaborative Learning: Fostering a community of learners where you can share experiences,
+                            support each other, and gain new perspectives. Peer learning is a powerful tool that
+                            enhances understanding and empathy.</li>
+                        <li>Continuous Support and Feedback: Maintaining an open line of communication with participants
+                            for ongoing support and feedback. Regular check-ins ensure that you feel supported and can
+                            track your progress.</li>
+                        <li>Inclusive support for everyone: My coaching programs are designed for everyone, whether
+                            you’re a working professional, student, or homemaker, a parent, or a child, you got my
+                            support.</li>
+                        <li>I offer a preventive approach, helping you avoid problems before they arise.</li>
+                        <li>Even with the best intentions, things can get out of hand sometimes. I'll partner with you
+                            to develop a personalized intervention plan that fits your unique needs that includes
+                            exploring the root cause of the current difficulties you're facing, providing strategies to
+                            address the specific challenges.</li>
+                        <li>We'll work together to implement the plan, monitor progress, and adjust strategies as
+                            needed.</li>
+                        <li>My programs are designed to be accessible and flexible, (both online & offline, for both
+                            group & individual) fitting into your busy life.</li>
+                    </ol>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-sm"> <img src="./static/images/certificate 4.jpg" alt="certificate not found">
-                    </div>
-                    <div class="col-sm"> <img src="./static/images/certificate 2.jpg" alt="certificate not found">
-                    </div>
-                </div> -->
+                
 
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-sm">
-                <h1 class="text-center mb-4">OUR SERVICES</h1>
-
-                <ol>
-                    <li>01:01 Counselling (Mode Offline & Online)</li>
-                    <li>Group Counselling (Mode Offline & Online)</li>
-                    <li>Dedicated Courses (Mode Offline & Online)</li>
-                    <li>Seminars & Workshops </li>
-                    <li>Webinars</li>
-                </ol>
-
-            </div>
-            <!-- <h1>This is images side</h1> -->
-
-            <div class="col-sm">
-                <img src="./static/images/Parenting/p.webp" alt="certificate not found" class="img1">
             </div>
 
         </div>
     </div>
-    </div>
 
+
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <h1 class="text-center mb-4">OUR SERVICES
+            </h1>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="./static/images/Friendly_logo.png" class="rounded" alt="Cinque Terre" width="150" height="136">
+                    <!-- <i class="fa-solid fa-handshake bg-info rounded-circle" style="font-size: 150px;" ></i> -->
+                    <h2>01:01 Counselling </h2>
+                    <!-- <p>The .rounded class adds rounded corners to an image:</p> -->
+                </div>
+                <div class=" col-sm">
+                    <img src="./static/images/Friendly_logo.png" class="rounded" alt="Cinque Terre" width="150" height="136">
+                    <!-- <i class="fa-solid fa-handshake bg-danger rounded-circle" style="font-size: 150px;"></i> -->
+                    <h2>Group Counselling 
+                    </h2>
+                    <!-- <p>The .rounded class adds rounded corners to an image:</p> -->
+                </div>
+                <div class="col-sm">
+                    <img src="./static/images/Friendly_logo.png" class="rounded" alt="Cinque Terre" width="150" height="136">
+                    <!-- <i class="fa-solid fa-handshake bg-danger rounded-circle" style="font-size: 150px;"></i> -->
+                    <h2>Dedicated Courses 
+                    </h2>
+                    <!-- <p>The .rounded class adds rounded corners to an image:</p> -->
+                </div>
+                <div class="col-sm">
+                    <img src="./static/images/Friendly_logo.png" class="rounded" alt="Cinque Terre" width="150" height="136">
+                    <!-- <i class="fa-solid fa-handshake bg-danger rounded-circle" style="font-size: 150px;"></i> -->
+                    <h2>Seminars & Workshops
+                    </h2>
+                    <!-- <p>The .rounded class adds rounded corners to an image:</p> -->
+                </div>
+                <div class="col-sm">
+                    <img src="./static/images/Friendly_logo.png" class="rounded" alt="Cinque Terre" width="150" height="136">
+                    <!-- <i class="fa-solid fa-handshake bg-danger rounded-circle" style="font-size: 150px;"></i> -->
+                    <h2>Webinars
+                    </h2>
+                    <!-- <p>The .rounded class adds rounded corners to an image:</p> -->
+                </div>
+
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-3 p-3 bg-primary text-white">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel esse inventore, tempore
+                        quisquam animi aperiam delectus voluptatem. Eum iusto natus aliquid incidunt id cupiditate vitae
+                        dolores molestias tenetur doloribus?</p>
+                </div>
+                <div class="col-sm-3 p-3 bg-dark text-white">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum perferendis saepe accusamus id?
+                        Praesentium odio officiis itaque, odit doloremque cum excepturi doloribus molestiae nobis
+                        dolorum
+                        molestias enim, dolorem earum quaerat?</p>
+                </div>
+                <div class="col-sm-3 p-3 bg-primary text-white">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nemo necessitatibus delectus, ad
+                        a
+                        minus autem doloremque tempora exercitationem rem? Incidunt corporis accusamus necessitatibus
+                        dignissimos accusantium, excepturi neque hic architecto.</p>
+                </div>
+                <div class="col-sm-3 p-3 bg-dark text-white">
+                    <h1>Highlight Text</h1>
+                    <p>Use the mark element (or the .mark class) to <mark>highlight</mark> text.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nemo necessitatibus delectus, ad
+                        a
+                        minus autem doloremque tempora exercitationem rem? Incidunt corporis accusamus necessitatibus
+                        dignissimos accusantium, excepturi neque hic architecto.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
     <div class="container mt-3 " id="content">
         <div class="row">
             <h1 class="text-center mb-4">Contact</h1>
@@ -247,7 +327,6 @@
             </div>
         </div>
     </div>
-    <!-- ====Start Footer Section===== -->
     <div class="container-fluid d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
@@ -261,17 +340,7 @@
 
             </div>
         </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="https://www.facebook.com/people/Friendly-parenting/100075962795986/" class="facebook"
-                target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/friendlyparenting/?igshid=YmMyMTA2M2Y%3D" class="instagram"
-                target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
     </div>
-
-    <!-- ====End Footer Section===== -->
-
 </body>
 
 </html>
